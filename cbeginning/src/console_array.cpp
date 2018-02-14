@@ -24,7 +24,8 @@ int main()
     printf("Element count of array years = %d \n", arrayLength);
 
     // Использовать цикл for чтобы распечатать элементы массива.
-    for (int i = 0; i < arrayLength; i++) {
+    for (int i = 0; i < arrayLength; i++)
+    {
         printf("Element at %d = %d \n", i, years[i]);
     }
 
