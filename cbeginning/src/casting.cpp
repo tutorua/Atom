@@ -42,6 +42,6 @@ int main()
         printf("i = %d = %d \n", i, a[i]);
     }
 
-    //getch();
+    // _getch(); // not work in my compiler (Cygwin)
     return 0;
 }

@@ -2,6 +2,7 @@
 #define Robot_h
 
 #include <iostream>
+#include <functional>
 
 struct Robot
 {

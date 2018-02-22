@@ -1,0 +1,31 @@
+@startuml
+skinparam handwritten true
+
+box "Tower"
+participant PC
+Participant Bob
+endbox
+
+box "Cart"
+actor Nurse
+participant Motor1
+participant Motor2
+participant Brake1
+participant Brake2
+Participant Control
+endbox
+
+box "Console"
+actor Surgeon
+participant Pedal_1
+participant Pedal_2
+participant L_Side_Pedal
+participant R_Side_Pedal
+endbox
+
+Motor2 -[#red]-> PC : Authentication Request
+PC -> Bob : Approved
+Bob -[#blue]> Control : Accepted
+Brake2 -[#green]-> Motor1
+
+@enduml
