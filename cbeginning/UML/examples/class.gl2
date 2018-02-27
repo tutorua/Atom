@@ -1,0 +1,24 @@
+@startuml
+'skinparam handwritten true'
+
+
+box "1"
+
+participant Software_Item << (1,#ADD1B2) SW item >> #white
+participant Highlighted_Item << (2,#ADD1B2) SW item >> #lightgreen
+participant Hardware_Computing_Node << (3,#ADD1B2) hardware >> #lightblue
+
+participant Software_Of_Unknown_Provenance << (4,#ADD1B2) SOUP >> #white
+participant Execution_Environment << (5,#ADD1B2) software >> #brown
+
+participant Process_and_Deployment_Software_Subsystem << (6,#ADD1B2) software >> #white
+participant Logging_Software_Subsystem << (7,#ADD1B2) software >> #white
+participant Safety_Software_Subsystem << (8,#ADD1B2) software >> #white
+
+endbox
+
+
+
+
+
+@enduml

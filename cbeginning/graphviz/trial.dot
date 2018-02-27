@@ -1,0 +1,25 @@
+digraph MyPlan {
+
+  node [shape="rectangle", style="filled", fillcolor="#FFFFFF", fontcolor="#000000"];
+  edge [style="dotted", color="#3322FF"];
+
+  rankdir="LR";
+
+
+  "\"software\"\nProcess and Deployment \nSoftware Subsystem"->"\"software\"\nLogging \n  Software Subsystem   "->"\"software\"\nSafety \n      Software Subsystem      ";
+  "\"SOUP\"\nSoftware Of \n  Unknown Provenance   "->"\"software\"\nExecution Environment";
+  "\"sw item\"\n         Software Item         "->"\"sw item\"\n      Highlighted Item     "->"\"hardware\"\nHardware_Computing_Node";
+
+
+
+  "Color Convention Overview" [style="bold"];
+  "\"sw item\"\n      Highlighted Item     " [style="filled", fillcolor="darkgreen", fontcolor="white"]
+  "\"hardware\"\nHardware_Computing_Node" [style="filled", fillcolor="lightblue"]
+  "\"SOUP\"\nSoftware Of \n  Unknown Provenance   " [style="filled", fillcolor="white", fontcolor="red"]
+  "\"software\"\nExecution Environment" [style="filled", fillcolor="brown", fontcolor="white"]
+  "\"software\"\nProcess and Deployment \nSoftware Subsystem" [style="filled", fillcolor="white", fontcolor="darkgreen"]
+  "\"software\"\nLogging \n  Software Subsystem   " [style="filled", fillcolor="white", fontcolor="blue"]
+  "\"software\"\nSafety \n      Software Subsystem      " [style="filled", fillcolor="white", fontcolor="red"]
+
+
+}

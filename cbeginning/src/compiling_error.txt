@@ -1,0 +1,10 @@
+D:\sandbox\atomc\cbeginning\src\static_array_01.cpp:14:28: error: array bound is not an integer constant before ']' token
+ static double a[arrayLength];
+                            ^
+D:\sandbox\atomc\cbeginning\src\static_array_01.cpp: In function 'int main()':
+D:\sandbox\atomc\cbeginning\src\static_array_01.cpp:22:43: error: 'a' was not declared in this scope
+         cout << ("Element at %d = %d", i, a[i]) << endl;
+                                           ^
+D:\sandbox\atomc\cbeginning\src\static_array_01.cpp:28:40: error: 'a' was not declared in this scope
+     printf("Sizeof(a) = %d \n", sizeof(a));
+                                        ^
