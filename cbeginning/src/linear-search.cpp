@@ -24,6 +24,7 @@ int main()
     cout << "Linear search in C examples:" << '\n';
 
     int a[] = {15, 23, 7, 45, 97, 16};
+    a[6] = 21; //why this works ???
     int userValue;
     cout << "Enter an integer: " << endl;
     cin >> userValue;
