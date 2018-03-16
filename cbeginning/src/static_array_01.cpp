@@ -32,14 +32,14 @@ int main()
         cout << ("Element at %f = %f", i, a[i]) << endl;
         a[i] = rand() / (double) RAND_MAX;
         cout << ("Assigned random %f = %f", i, a[i]) << endl;
-
     }
-    a[3] = 1; // should generate a warning but does not
+
+    a[3] = 1; // should generate a warning but does not !
     printf("Sizeof(double) = %d \n", sizeof(double));
     // Define the number of bytes required to keep the array values
     printf("Sizeof(a) = %d \n", sizeof(a));
 
-    // Print the array
+    // Print the array. Why 4 elements ???!!!
     for (int i = 0; i <= iArrayLength; ++i)
     {
         //printf("Element at %d = %d \n", i, a[i]);
