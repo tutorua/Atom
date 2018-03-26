@@ -1,0 +1,72 @@
+@startuml
+' skinparam handwritten true'
+
+box "Box_1" #eebbaa
+actor Actor1 #blue
+boundary Boundary1
+control Control1 #cyan
+entity Entity1
+database Database1
+collections Collections1 #lightblue
+' comment line'
+participant Participant1 << (A,#ADD1B2) Testable >> #lightgreen
+endbox
+
+'box_0 is an example of incoming and outgoing'
+box "Box_0"
+[-> Bob
+[o-> Bob
+[o->o Bob
+[x-> Bob
+[<- Bob
+[x<- Bob
+Bob ->]
+Bob ->o]
+Bob o->o]
+Bob ->x]
+Bob <-]
+Bob x<-]
+endbox
+
+box "Box_2" #ddccbb
+actor Actor #red
+boundary Boundary2
+control Control2 #cyan
+entity Entity2
+database Database2 << (M,#ADD1B2) Testable >>
+collections Collections2 << (R,#ADD1B2) Testable >> #lightblue
+' comment line'
+participant Participant2 #lightgreen
+endbox
+
+
+'lines connectors'
+ref over Actor1, Boundary1, Control1 : Requirement #123
+ref over Boundary1, Control1, Entity1 : TestCase  #123-567
+Actor1 --> Control2 : text1
+hnote over Control2 : idle
+
+== Initialization ==
+
+autonumber 3 "<font color=red><b>Message 0 "
+Entity1 -> Entity2 : <font color=blue>Request
+rnote over Control2 : Processing
+activate Control2
+... 5 minutes latter :) ...
+Entity1 <- Control2 : Responce
+destroy Control2
+'some vertical space'
+|||
+autonumber stop
+Control2 -> Collections2 : text2 \nin two lines
+
+== Processing data ==
+
+Actor1 -[#blue]-> Actor1 : Check \nthe \nalarm \ntone
+Boundary1 <- Participant2 : <font color=green>Explanation line
+note left : This is a \nmultiline note
+
+newpage
+
+
+@enduml
