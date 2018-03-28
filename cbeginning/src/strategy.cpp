@@ -6,7 +6,7 @@ Bradley Needham
 
 
 #include <iostream>
-#include "Robot.h"
+#include "..\include\Robot.h" // does not see the file inside \src\headers
 
 using namespace std;
 

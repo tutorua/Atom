@@ -36,27 +36,27 @@ private:
     Defend * m_defend;
 };
 
-struct Linear : Robot::search
+struct Linear : Robot::Search
 {
     void apply(Robot& r) { std::cout << "Linear\n"; }
 };
 
-struct Spiral : Robot::search
+struct Spiral : Robot::Search
 {
     void apply(Robot& r) { std::cout << "Spiral\n"; }
 };
 
-struct Pinch : Robot::search
+struct Pinch : Robot::Search
 {
     void apply(Robot& r) { std::cout << "Pinch\n"; }
 };
 
-struct Punch : Robot::search
+struct Punch : Robot::Search
 {
     void apply(Robot& r) { std::cout << "Punch\n"; }
 };
 
-struct Run : Robot::search
+struct Run : Robot::Search
 {
     void apply(Robot& r) { std::cout << "Run\n"; }
 };
